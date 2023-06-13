@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam</title>
+  <link rel="stylesheet" href="/HN_JV230425_NguyenDucPhuong/css/exam_style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+      <form action="#">
+        <label for="product_id">Product Id</label><input type="text" name="product_id" id="product_id"><br>
+        <br>
+        <label for="product_name">Product Name</label><input type="text" name="product_name" id="product_name"><br>
+        <br>
+        <label for="import_price">Import Price</label><input type="text" name="import_price" id="import_price"><br>
+        <br>
+        <label for="export_price">Export Price</label><input type="text" name="export_price" id="export_price"><br>
+        <br>
+        <label for="import_date">Import Date</label><input type="date" name="import_date" id="import_date"><br>
+        <br>
+        <label for="">Size</label><input type="checkbox" name="size" id="X_size" value="X"><label
+          for="X_size">X</label><input type="checkbox" name="size" id="XL_size" value="XL"><label
+          for="XL_size">XL</label><input type="checkbox" name="size" id="L_size" value="L"><label
+          for="L_size">L</label><br>
+        <br>
+        <label for="">Type</label><input type="radio" name="type" id="male" value="Male" checked><label
+          for="male">Male</label><input type="radio" name="type" id="female" value="Female"><label
+          for="female">Female</label><br>
+        <br>
+        <label for="description">Description</label><textarea name="description" id="description" cols="25"
+          rows="5"></textarea><br>
+        <br>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="content">
+      <h3>List Product</h3>
+      <label for="search_product">Product Name</label><input type="text" name="search_product"
+        id="search_product"><button type="button" class="search_btn">Search</button><br>
+      <br>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Import Price</th>
+            <th>Export Price</th>
+            <th>Import Date</th>
+            <th>Size</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody class="product_list">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="/HN_JV230425_NguyenDucPhuong/js/exam_js.js"></script>
+</body>
+
+</html>
